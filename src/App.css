@@ -1,0 +1,371 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff7c7c;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Envelope container */
+.envelope-container {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.envelope-image {
+  max-width: 100%;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.envelope-container:hover .envelope-image {
+  transform: scale(1.1);
+}
+
+.envelope-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Modal */
+.modal-monthsary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-message {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-message p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.close-btn {
+  background-color: #ff7c7c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #ff4c4c;
+}
+
+/* Proposal section */
+.proposal {
+  margin-top: 2rem;
+}
+
+.proposal-text {
+  font-size: 2rem;
+  color: #ff7c7c;
+  margin-bottom: 1rem;
+}
+
+.response-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background-color: #ff7c7c;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.no-button-moving {
+  transform: translateY(50px) !important;
+}
+
+.no-button-moving {
+  transform: translateY(50px) !important;
+}
+
+/* Bouquet section */
+.bouquet-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.bouquet-image {
+  max-width: 100%;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bouquet-message {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Pop-up sections */
+.pop-up, .no-pop-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.pop-up-image, .no-pop-up-image {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.pop-up-message, .angry-response {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.next-button {
+  background-color: #ff7c7c;
+  color: white;
+  font-size: 1.5rem;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.next-button:hover {
+  background-color: #ff4c4c;
+}
+
+/* Confetti Styling */
+.react-confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Pop-up sections */
+/* Pop-up sections */
+/* Pop-up sections */
+.pop-up, .no-pop-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Darkened background */
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* White container for No and CAT pop-ups */
+.pop-up-container, .no-pop-up-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* For "No" image pop-up */
+.no-pop-up-image {
+  width: 80%;
+  max-width: 300px; /* Adjusted size */
+  border-radius: 10px;
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+/* For CAT GIF pop-up */
+.pop-up-image {
+  width: 80%;
+  max-width: 300px; /* Adjusted size */
+  border-radius: 10px;
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+
+/* Pop-up message styling */
+.pop-up-message, .angry-response {
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Close button */
+.close-btn {
+  background-color: #ff7c7c;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.close-btn:hover {
+  background-color: #ff4c4c;
+}
+
+.gogi-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gogi-pop-up-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.gogi-pop-up-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.gogi-pop-up-message {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.close-btn {
+  background-color: #ff4f5e;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.close-btn:hover {
+  background-color: #ff2639;
+}
+/* Error message container */
+.error-message {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4d4d; /* Bright red background */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out, shake 0.5s 1s ease; /* Animation for fading in and shaking */
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+/* Shake effect */
+@keyframes shake {
+  0% {
+    transform: translateX(-50%) translateX(0);
+  }
+  25% {
+    transform: translateX(-50%) translateX(10px);
+  }
+  50% {
+    transform: translateX(-50%) translateX(-10px);
+  }
+  75% {
+    transform: translateX(-50%) translateX(10px);
+  }
+  100% {
+    transform: translateX(-50%) translateX(0);
+  }
+}
